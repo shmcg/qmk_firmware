@@ -5,5 +5,5 @@ STENO_ENABLE = no		# Enable Steno
 AUDIO_ENABLE = yes		# Enable the audio subsystem
 BOOTMAGIC_ENABLE = no	# Virtual DIP switch configuration(+1000)
 MIDI_ENABLE = no		# MIDI Controld
-COMMAND_ENABLE = no		# Commands for debug and configuration
+COMMAND_ENABLE = yes	# Commands for debug and configuration
 RGBLIGHT_ENABLE = no	# Enable keyboard underlight functionality

@@ -187,7 +187,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       break;
     case EXT_PLV:
       if (record->event.pressed) {
-        print("Exiting Plover Mode\n")
+        print("Exiting Plover Mode\n");
         #ifdef AUDIO_ENABLE
           PLAY_SONG(plover_gb_song);
         #endif

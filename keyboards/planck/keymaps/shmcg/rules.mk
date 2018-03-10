@@ -1,9 +1,9 @@
-CONSOLE_ENABLE = no		# Console for Debug (+400)
+CONSOLE_ENABLE = yes	# Console for Debug (+400)
 MOUSEKEY_ENABLE = yes	# Mouse keys (+4700)
 EXTRAKEY_ENABLE = yes	# Audio control and System Control (+450)
 STENO_ENABLE = no		# Enable Steno
 AUDIO_ENABLE = yes		# Enable the audio subsystem
 BOOTMAGIC_ENABLE = no	# Virtual DIP switch configuration(+1000)
 MIDI_ENABLE = no		# MIDI Controld
-COMMAND_ENABLE = no		# Commans for debug and configuration
+COMMAND_ENABLE = no		# Commands for debug and configuration
 RGBLIGHT_ENABLE = no	# Enable keyboard underlight functionality

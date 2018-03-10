@@ -19,6 +19,7 @@
 
 extern keymap_config_t keymap_config;
 
+#undef LEADER_TIMEOUT
 #define LEADER_TIMEOUT 300
 
 enum planck_layers {

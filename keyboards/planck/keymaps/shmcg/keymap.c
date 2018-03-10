@@ -20,7 +20,7 @@
 extern keymap_config_t keymap_config;
 
 #undef LEADER_TIMEOUT
-#define LEADER_TIMEOUT 300
+#define LEADER_TIMEOUT 500
 
 enum planck_layers {
   _QWERTY,
@@ -150,13 +150,24 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
 LEADER_EXTERNS();
 
-
 void matrix_scan_user(void) {
     LEADER_DICTIONARY() {
         leading = false;
         leader_end();
 
-        SEQ_TWO_KEYS(KC_F3, KC_P) {
+        SEQ_ONE_KEY(KC_P) {
+            register_code(KC_PASTE);
+            unregister_code(KC_PASTE);
+        }
+
+        SEQ_TWO_KEYS(KC_C, KC_B) {
+            register_code(KC_LGUI);
+            register_code(KC_SPC);
+            unregister_code(KC_SPC);
+            unregister_code(KC_LGUI);
+        }
+
+        SEQ_THREE_KEYS(KC_M, KC_E, KC_P) {
             register_code(KC_F3);
             register_code(KC_P);
             unregister_code(KC_P);

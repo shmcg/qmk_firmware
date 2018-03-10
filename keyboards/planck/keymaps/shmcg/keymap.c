@@ -19,6 +19,8 @@
 
 extern keymap_config_t keymap_config;
 
+#define LEADER_TIMEOUT 300
+
 enum planck_layers {
   _QWERTY,
   _LOWER,
@@ -143,4 +145,21 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       break;
   }
   return true;
+}
+
+LEADER_EXTERNS();
+
+
+void matrix_scan_user(void) {
+    LEADER_DICTIONARY() {
+        leading = false;
+        leader_end();
+
+        SEQ_TWO_KEYS(KC_F3, KC_P) {
+            register_code(KC_F3);
+            register_code(KC_P);
+            unregister_code(KC_P);
+            unregister_code(KC_F3);
+        }
+    }
 }

@@ -113,6 +113,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 #ifdef AUDIO_ENABLE
   float plover_song[][2]     = SONG(PLOVER_SOUND);
   float plover_gb_song[][2]  = SONG(PLOVER_GOODBYE_SOUND);
+  float imperial_march_song[][2] = SONG(IMPERIAL_MARCH);
 #endif
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
@@ -146,6 +147,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       break;
     case BACKLIT:
       if (record->event.pressed) {
+        #ifdef AUDIO_ENABLE
+          PLAY_SONG(imperial_march_song);
+        #endif
         register_code(KC_RSFT);
         #ifdef BACKLIGHT_ENABLE
           backlight_step();

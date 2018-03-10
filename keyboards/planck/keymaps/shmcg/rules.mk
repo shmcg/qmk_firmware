@@ -1,8 +1,9 @@
-STENO_ENABLE = no
-AUDIO_ENABLE = yes
-BOOTMAGIC_ENABLE = no
-MOUSEKEY_ENABLE = yes
-CONSOLE_ENABLE = yes
-MIDI_ENABLE = no
-COMMAND_ENABLE = yes
-RGBLIGHT_ENABLE = no
+CONSOLE_ENABLE = no		# Console for Debug (+400)
+MOUSEKEY_ENABLE = yes	# Mouse keys (+4700)
+EXTRAKEY_ENABLE = yes	# Audio control and System Control (+450)
+STENO_ENABLE = no		# Enable Steno
+AUDIO_ENABLE = yes		# Enable the audio subsystem
+BOOTMAGIC_ENABLE = no	# Virtual DIP switch configuration(+1000)
+MIDI_ENABLE = no		# MIDI Controld
+COMMAND_ENABLE = no		# Commans for debug and configuration
+RGBLIGHT_ENABLE = no	# Enable keyboard underlight functionality

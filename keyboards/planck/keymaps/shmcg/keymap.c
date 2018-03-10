@@ -30,7 +30,6 @@ enum planck_keycodes {
   QWERTY = SAFE_RANGE,
   LOWER,
   RAISE,
-  EXT_PLV
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {

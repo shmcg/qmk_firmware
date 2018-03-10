@@ -16,6 +16,7 @@
 
 #include "planck.h"
 #include "action_layer.h"
+#include "keymap_steno.h"
 
 extern keymap_config_t keymap_config;
 

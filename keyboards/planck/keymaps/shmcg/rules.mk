@@ -1,8 +1,11 @@
+# Always enabled
 CONSOLE_ENABLE = yes	# Console for Debug (+400)
-MOUSEKEY_ENABLE = yes	# Mouse keys (+4700)
-EXTRAKEY_ENABLE = yes	# Audio control and System Control (+450)
-STENO_ENABLE = no		# Enable Steno
 AUDIO_ENABLE = yes		# Enable the audio subsystem
+# Toggled based on use
+EXTRAKEY_ENABLE = yes	# Audio control and System Control (+450)
+MOUSEKEY_ENABLE = no	# Mouse keys (+4700)
+STENO_ENABLE = no		# Enable Steno
+# Rarely enabled
 BOOTMAGIC_ENABLE = no	# Virtual DIP switch configuration(+1000)
 MIDI_ENABLE = no		# MIDI Controld
 COMMAND_ENABLE = no 	# Commands for debug and configuration

@@ -3,6 +3,9 @@
 
 #include "config_common.h"
 
+#define LEADER_TIMEOUT 500
+#define LEADER_PER_KEY_TIMING
+
 #ifdef AUDIO_ENABLE
     #define STARTUP_SONG SONG(PLANCK_SOUND)
     // #define STARTUP_SONG SONG(NO_SOUND)

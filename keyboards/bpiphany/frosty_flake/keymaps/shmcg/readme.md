@@ -1,1 +1,1 @@
-# The default keymap for frosty_flake
+# TKL keymap for frosty_flake
